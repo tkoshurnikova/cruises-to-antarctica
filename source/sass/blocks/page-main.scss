@@ -1,3 +1,22 @@
 .page-main {
   flex: 1 0 auto;
 }
+
+.page-main__details {
+  margin-top: 110px;
+  margin-bottom: 120px;
+}
+
+@media (max-width: 1023px) {
+  .page-main__details {
+    margin-top: 71px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-main__details {
+    margin-top: 36px;
+    margin-bottom: 58px;
+  }
+}

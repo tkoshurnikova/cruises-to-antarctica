@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #002f67; /*временно*/
+  background: transparent;
   padding: 0 calc(50% - 580px);
   min-height: 110px;
   position: relative;
@@ -99,7 +99,7 @@
     align-items: flex-start;
     padding: 0 calc(50% - 145px);
     padding-top: 20px;
-    background-color: #ffffff;
+    background-color: transparent;
   }
 
   .page-header__nav ul {
@@ -135,7 +135,7 @@
   }
 
   .page-header__nav-toggler--menu-closed {
-    right: 15px;
+    left: 88%;
   }
 
   .page-header__nav-toggler--no-js,
@@ -146,6 +146,7 @@
   .page-header__nav--no-js,
   .page-header__nav--opened {
     display: block;
+    margin-bottom: 155px;
   }
 
   .page-header__svg--menu-opened path {
