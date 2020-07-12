@@ -1,0 +1,191 @@
+.cruises {
+  padding: 0 calc(50% - 580px);
+}
+
+.cruises h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 1.8px;
+}
+
+.cruises h3 {
+  position: absolute;
+  bottom: 29px;
+  left: 31px;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #f9fbfd;
+  letter-spacing: 1.3px;
+}
+
+.cruises ul {
+  margin: 0;
+  margin-top: 26px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.cruises__item {
+  position: relative;
+  margin-top: 22px;
+}
+
+.cruises__item-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 260px;
+  height: 386px;
+  padding: 71px 15px 35px 25px;
+  background-color: #011c40;
+  box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
+}
+
+.cruises__item:hover > .cruises__item-info,
+.cruises__item:focus > .cruises__item-info {
+  display: flex;
+}
+
+.cruises__item:hover > h3,
+.cruises__item:focus > h3 {
+  top: 30px;
+  left: 26px;
+  z-index: 10;
+}
+
+.cruises__item-info h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #f9fbfd;
+  letter-spacing: 1.1px;
+}
+
+.cruises__item-info p {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #d8d8d9;
+  letter-spacing: 1.1px;
+}
+
+.cruises__item-info button {
+  width: 210px;
+  height: 40px;
+  margin-top: 12px;
+  background-color: #f9fbfd;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #011c40;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1023px) {
+  .cruises {
+    padding: 0 calc(50% - 339px);
+  }
+
+  .cruises h2 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .cruises ul {
+    margin-top: 22px;
+  }
+
+  .cruises__item {
+    margin-top: 29px;
+  }
+
+  .cruises__item,
+  .cruises__item img,
+  .cruises__item-info {
+    width: 309px;
+    height: 386px;
+  }
+
+  .cruises h3 {
+    left: 36px;
+    bottom: 27px;
+  }
+
+  .cruises__item:hover > h3,
+  .cruises__item:focus > h3 {
+    top: 30px;
+    left: 35px;
+  }
+
+  .cruises__item-info {
+    padding-top: 68px;
+    padding-left: 36px;
+  }
+
+  .cruises__item-info button {
+    width: 239px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cruises {
+    padding: 0 calc(50% - 145px);
+  }
+
+  .cruises h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .cruises__item,
+  .cruises__item img,
+  .cruises__item-info {
+    width: 270px;
+    height: 386px;
+  }
+
+  .cruises ul {
+    margin-top: 0;
+  }
+
+  .cruises__item {
+    margin-top: 30px;
+  }
+
+  .cruises h3 {
+    left: 26px;
+    bottom: 16px;
+  }
+
+  .cruises__item-info {
+    padding-left: 24px;
+  }
+
+  .cruises__item:hover > h3,
+  .cruises__item:focus > h3 {
+    left: 24px;
+  }
+
+  .cruises__item-info button {
+    width: 220px;
+  }
+}

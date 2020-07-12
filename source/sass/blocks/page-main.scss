@@ -7,10 +7,20 @@
   margin-bottom: 110px;
 }
 
+.page-main__cruises {
+  margin-top: 110px;
+  margin-bottom: 110px;
+}
+
 @media (max-width: 1023px) {
   .page-main__details {
     margin-top: 71px;
     margin-bottom: 74px;
+  }
+
+  .page-main__cruises {
+    margin-top: 90px;
+    margin-bottom: 100px;
   }
 }
 
@@ -18,5 +28,10 @@
   .page-main__details {
     margin-top: 36px;
     margin-bottom: 58px;
+  }
+
+  .page-main__cruises {
+    margin-top: 56px;
+    margin-bottom: 65px;
   }
 }
