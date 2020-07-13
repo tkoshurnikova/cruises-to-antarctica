@@ -83,6 +83,7 @@
 }
 
 .cruises__item-info button {
+  cursor: pointer;
   width: 210px;
   height: 40px;
   margin-top: 12px;
@@ -92,7 +93,11 @@
   line-height: 21px;
   color: #011c40;
   border: none;
-  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #ebedf0;
+  }
 }
 
 @media (max-width: 1023px) {
