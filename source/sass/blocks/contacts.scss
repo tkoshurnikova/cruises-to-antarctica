@@ -1,0 +1,128 @@
+.contacts {
+  padding: 0 calc(50% - 580px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts__map-section {
+  position: relative;
+}
+
+.contacts__contacts-section {
+  padding-left: 100px;
+}
+
+.contacts p {
+  margin-top: -10px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #011c40;
+  letter-spacing: 1.3px;
+}
+
+.contacts address,
+.contacts a {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #011c40;
+  text-decoration: none;
+  letter-spacing: 0.8px;
+}
+
+.contacts address {
+  margin-bottom: 20px;
+}
+
+.contacts address::before,
+.contacts a::before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+}
+
+.contacts address::before {
+  background-image: url("../img/icon-map-marker.svg");
+  background-size: 18px 22px;
+}
+
+.contacts a::before {
+  background-image: url("../img/icon-phone.svg");
+  background-size: 18px 18px;
+}
+
+.contacts svg {
+  position: absolute;
+  top: 217px;
+  left: 247px;
+}
+
+.contacts br {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .contacts {
+    padding: 0 calc(50% - 339px);
+  }
+
+  .contacts img {
+    width: 324px;
+    height: 335px;
+    object-fit: cover;
+    object-position: -165px 50%;
+  }
+
+  .contacts svg {
+    left: 108px;
+  }
+
+  .contacts__contacts-section {
+    padding-left: 30px;
+  }
+
+  .contacts br {
+    display: inline;
+  }
+}
+
+@media (max-width: 767px) {
+  .contacts {
+    padding: 0 calc(50% - 145px);
+    flex-direction: column-reverse;
+  }
+
+  .contacts__contacts-section {
+    padding-left: 0;
+  }
+
+  .contacts p {
+    padding-right: 13px;
+  }
+
+  .contacts__map-section {
+    margin-top: 34px;
+  }
+
+  .contacts img {
+    width: 290px;
+    height: 316px;
+    object-position: -145px 50%;
+  }
+
+  .contacts svg {
+    left: 111px;
+    top: 223px;
+  }
+}

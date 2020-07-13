@@ -12,6 +12,11 @@
   margin-bottom: 110px;
 }
 
+.page-main__contacts {
+  margin-top: 120px;
+  margin-bottom: 112px;
+}
+
 @media (max-width: 1023px) {
   .page-main__details {
     margin-top: 71px;
@@ -21,6 +26,11 @@
   .page-main__cruises {
     margin-top: 90px;
     margin-bottom: 100px;
+  }
+
+  .page-main__contacts {
+    margin-top: 100px;
+    margin-bottom: 91px;
   }
 }
 
@@ -33,5 +43,10 @@
   .page-main__cruises {
     margin-top: 56px;
     margin-bottom: 65px;
+  }
+
+  .page-main__contacts {
+    margin-top: 68px;
+    margin-bottom: 57px;
   }
 }
