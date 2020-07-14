@@ -1,14 +1,19 @@
-.intro img {
-  position: relative;
-  z-index: -1;
-  width: 100%;
-  margin-top: -392px;
-  object-fit: cover;
+.intro {
+  height: 650px;
+  background-color: #003571;
+  background-image: url("../img/main-screen-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/main-screen-desktop@2x.jpg");
+  }
 }
 
 .intro h1 {
-  margin-left: 200px;
-  margin-top: 160px;
+  margin: 0 7.5%;
+  padding-left: 95px;
+  padding-top: 270px;
   margin-bottom: 0;
   color: #f9fbfd;
   font-weight: 700;
@@ -17,8 +22,10 @@
 }
 
 .intro p {
-  margin-left: 200px;
+  margin: 0 7.5%;
   margin-top: 13px;
+  margin-bottom: 19px;
+  padding-left: 95px;
   color: #f9fbfd;
   font-size: 20px;
   line-height: 24px;
@@ -29,9 +36,19 @@
 }
 
 @media (max-width: 1023px) {
+  .intro {
+    height: 638px;
+    background-image: url("../img/main-screen-tablet@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/main-screen-tablet@2x.jpg");
+    }
+  }
+
   .intro h1 {
     margin: 0 calc(50% - 339px);
-    margin-top: 188px;
+    padding-top: 269px;
+    padding-left: 0;
     font-size: 50px;
     line-height: 61px;
   }
@@ -40,20 +57,25 @@
     margin: 0 calc(50% - 339px);
     margin-top: 12px;
     margin-bottom: 17px;
+    padding-left: 0;
     font-size: 18px;
     line-height: 22px;
   }
 }
 
 @media (max-width: 767px) {
-  .intro img {
+  .intro {
     height: 500px;
-    margin-top: -337px;
+    background-image: url("../img/main-screen-mobile@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/main-screen-mobile@2x.jpg");
+    }
   }
 
   .intro h1 {
     margin: 0 calc(50% - 145px);
-    margin-top: 77px;
+    padding-top: 177px;
     font-size: 36px;
     line-height: 45px;
   }

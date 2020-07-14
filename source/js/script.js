@@ -1,4 +1,5 @@
 'use strict';
+
 var pageHeader = document.querySelector('.page-header');
 var headerToggle = pageHeader.querySelector('.page-header__nav-toggler');
 var navBlock = pageHeader.querySelector('.page-header__nav');
@@ -31,4 +32,10 @@ headerToggle.addEventListener('click', function () {
     svgLogo.classList.add('page-header__svg--menu-closed');
     svgLogo.classList.remove('page-header__svg--menu-opened');
   }
+});
+
+var phoneInput = document.querySelector('.booking__form #phone');
+
+IMask(phoneInput, {
+  mask: '+{7}(000)000-00-00'
 });

@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   background: transparent;
-  padding: 0 calc(50% - 580px);
+  padding: 0 7.5%;
   min-height: 110px;
   position: relative;
 }
@@ -45,6 +45,10 @@
   &:focus {
     color: #d4d4d4;
   }
+
+  &:active {
+    color: #c4c4c4;
+  }
 }
 
 .page-header__nav-toggler {
@@ -82,7 +86,7 @@
   }
 
   .page-header__nav li {
-    padding-right: 26px;
+    padding-right: 24px;
   }
 
   .page-header__nav a {
@@ -132,7 +136,7 @@
   }
 
   .page-header__nav-toggler--menu-closed {
-    left: 88%;
+    right: calc(50% - 145px);
   }
 
   .page-header__nav-toggler--no-js,
