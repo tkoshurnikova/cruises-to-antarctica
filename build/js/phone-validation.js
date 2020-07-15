@@ -1,7 +1,7 @@
 'use strict';
 
 (function () {
-  var phoneInput = document.querySelector("#phone");
+  var phoneInput = document.querySelector('#phone');
 
   if (phoneInput) {
     phoneInput.addEventListener('keydown', function (evt) {
