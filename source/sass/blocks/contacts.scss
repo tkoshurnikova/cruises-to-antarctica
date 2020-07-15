@@ -35,6 +35,12 @@
   text-decoration: none;
 }
 
+.contacts a:hover,
+.contacts a:focus {
+  color: #000000;
+  text-decoration: underline;
+}
+
 .contacts address {
   margin-bottom: 20px;
 }
@@ -51,12 +57,12 @@
 }
 
 .contacts address::before {
-  background-image: url("../img/icon-map-marker.svg");
+  background-image: url("../img/icons/icon-map-marker.svg");
   background-size: 18px 22px;
 }
 
 .contacts a::before {
-  background-image: url("../img/icon-phone.svg");
+  background-image: url("../img/icons/icon-phone.svg");
   background-size: 18px 18px;
 }
 
@@ -72,7 +78,7 @@
 
 @media (max-width: 1023px) {
   .contacts {
-    padding: 0 calc(50% - 339px);
+    padding: 0 5.7%;
   }
 
   .contacts img {
@@ -97,7 +103,7 @@
 
 @media (max-width: 767px) {
   .contacts {
-    padding: 0 calc(50% - 145px);
+    padding: 0 4.7%;
     flex-direction: column-reverse;
   }
 

@@ -63,20 +63,20 @@
 }
 
 .page-header__nav-toggler--menu-closed {
-  background-image: url("../img/icon-burger.svg");
+  background-image: url("../img/icons/icon-burger.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .page-header__nav-toggler--menu-opened {
-  background-image: url("../img/icon-cross.svg");
+  background-image: url("../img/icons/icon-cross.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 @media (max-width: 1023px) {
   .page-header {
-    padding: 0 calc(50% - 339px);
+    padding: 0 5.7%;
     min-height: 80px;
   }
 
@@ -99,7 +99,7 @@
   .page-header {
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 calc(50% - 145px);
+    padding: 0 4.7%;
     padding-top: 20px;
     background-color: transparent;
   }
@@ -136,7 +136,7 @@
   }
 
   .page-header__nav-toggler--menu-closed {
-    right: calc(50% - 145px);
+    right: 4.7%;
   }
 
   .page-header__nav-toggler--no-js,
