@@ -10,9 +10,15 @@
   }
 }
 
+.intro > div {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .intro h1 {
   margin: 0 7.5%;
-  padding-left: 95px;
+  padding-left: 10px;
   padding-top: 270px;
   margin-bottom: 0;
   color: #f9fbfd;
@@ -25,7 +31,7 @@
   margin: 0 7.5%;
   margin-top: 13px;
   margin-bottom: 19px;
-  padding-left: 95px;
+  padding-left: 10px;
   color: #f9fbfd;
   font-size: 20px;
   line-height: 24px;

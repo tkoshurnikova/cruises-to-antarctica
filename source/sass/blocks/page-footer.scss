@@ -1,11 +1,18 @@
 .page-footer {
-  flex: 0 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background-color: #011c40;
   padding: 0 7.5%;
   min-height: 138px;
+}
+
+.page-footer > div {
+  flex-basis: 100%;
+  max-width: 1160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .page-footer__nav {
@@ -122,9 +129,13 @@
 
 @media (max-width: 767px) {
   .page-footer {
-    min-height: 283px;
+    padding: 0;
+  }
+
+  .page-footer > div {
     flex-direction: column;
     align-items: flex-start;
+    min-height: 283px;
     padding: 0 4.7%;
     padding-top: 36px;
     padding-bottom: 32px;

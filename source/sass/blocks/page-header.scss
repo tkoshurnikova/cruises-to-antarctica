@@ -1,11 +1,19 @@
 .page-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background: transparent;
   padding: 0 7.5%;
   min-height: 110px;
   position: relative;
+}
+
+.page-header > div {
+  flex-basis: 100%;
+  max-width: 1160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .page-header__logo {
@@ -97,11 +105,15 @@
 
 @media (max-width: 767px) {
   .page-header {
-    flex-direction: column;
     align-items: flex-start;
     padding: 0 4.7%;
     padding-top: 20px;
     background-color: transparent;
+  }
+
+  .page-header > div {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .page-header__nav ul {
