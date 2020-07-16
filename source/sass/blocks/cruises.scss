@@ -55,6 +55,7 @@
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
+  height: 100%;
   min-height: 386px;
   padding: 30px 15px 35px 25px;
   background-color: #011c40;
@@ -111,7 +112,7 @@
   justify-content: center;
   width: 96%;
   height: 40px;
-  margin-top: 12px;
+  margin-top: 0;
   background-color: #f9fbfd;
   font-weight: 600;
   font-size: 14px;
