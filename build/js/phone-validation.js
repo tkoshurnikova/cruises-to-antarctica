@@ -5,16 +5,16 @@
 
   if (phoneInput) {
     phoneInput.addEventListener('keydown', function (evt) {
-      var theEvent = evt || window.event;
-      var key = theEvent.keyCode || theEvent.which;
-      key = String.fromCharCode(key);
-      var regex = /[0-9]|\./;
-      if (!regex.test(key)) {
-        theEvent.returnValue = false;
-        if (theEvent.preventDefault) {
-          theEvent.preventDefault();
+      var key = evt.keyCode;
+      if (key === 46 || key === 8 || key === 37 || key === 39) {
+        return true;
+      } else if (key < 48 || key > 57) {
+        evt.returnValue = false;
+        if (evt.preventDefault) {
+          evt.preventDefault();
         }
       }
+      return true;
     });
   }
 })();
