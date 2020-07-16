@@ -18,6 +18,7 @@
       navBlock.classList.toggle('page-header__nav--opened');
       svgLogo.classList.toggle('page-header__svg--menu-closed');
       svgLogo.classList.toggle('page-header__svg--menu-opened');
+      pageHeader.classList.toggle('page-header--opened');
     });
   }
 })();

@@ -66,7 +66,7 @@
   background-color: transparent;
   display: none;
   position: absolute;
-  right: 10px;
+  right: 4.7%;
   top: 19px;
 }
 
@@ -145,6 +145,7 @@
 
   .page-header__nav-toggler {
     display: block;
+    right: 12%;
   }
 
   .page-header__nav-toggler--menu-closed {
@@ -159,7 +160,17 @@
   .page-header__nav--no-js,
   .page-header__nav--opened {
     display: block;
-    margin-bottom: 155px;
+    margin-bottom: 160px;
+  }
+
+  .page-header--opened {
+    position: relative;
+    background-color: #f9fbfd;
+    width: 100%;
+  }
+
+  .page-header--opened + .page-main {
+    margin-top: -303px;
   }
 
   .page-header__svg--menu-opened path {
