@@ -42,7 +42,7 @@
 
 .cruises__item img {
   height: 100%;
-  width: 90%;
+  width: calc(100% - 30px);
   box-sizing: content-box;
   object-fit: cover;
   position: absolute;
@@ -51,7 +51,6 @@
 }
 
 .cruises__item-info {
-  display: none;
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
